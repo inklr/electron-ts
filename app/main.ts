@@ -2,6 +2,13 @@ import { app, BrowserWindow } from 'electron'
 declare var __dirname: string
 let mainWindow: Electron.BrowserWindow
 
+(global as any).plaidConfig = {
+  clientId: '',
+  secret: '',
+  publicKey: '',
+  env: ''
+}
+
 function onReady() {
   mainWindow = new BrowserWindow({
     width: 800,

@@ -73,6 +73,12 @@
 var _electron = __webpack_require__(1);
 
 var mainWindow = void 0;
+global.plaidConfig = {
+    clientId: '',
+    secret: '',
+    publicKey: '',
+    env: ''
+};
 function onReady() {
     mainWindow = new _electron.BrowserWindow({
         width: 800,
